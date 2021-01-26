@@ -1,4 +1,5 @@
-import model.Student;
+import de.neuefische.DB.StudentDB;
+import de.neuefische.model.Student;
 
 public class AppMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package model;
+package de.neuefische.model;
 
 public class Student {
     // Attribute
@@ -37,5 +37,7 @@ public class Student {
                 ", maNummer=" + maNummer +
                 '}';
     }
+
+    //equal&hash
 
 }

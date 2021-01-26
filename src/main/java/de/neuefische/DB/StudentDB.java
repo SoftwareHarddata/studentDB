@@ -1,4 +1,6 @@
-import model.Student;
+package de.neuefische.DB;
+
+import de.neuefische.model.Student;
 
 import java.util.Arrays;
 
@@ -8,9 +10,11 @@ public class StudentDB {
 
     // konstruktor
     public StudentDB(Student[] studentArray) {
+
         this.studentArray = studentArray;
     }
 
+    // Methoden
     public Student[] list(){
         return this.studentArray;
     }
@@ -19,6 +23,7 @@ public class StudentDB {
         Student student = new Student(name, maNummer);
     }
 
+    // toString
     @Override
     public String toString() {
         return "StudentDB{" +
@@ -26,3 +31,4 @@ public class StudentDB {
                 '}';
     }
 }
+
