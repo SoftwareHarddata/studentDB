@@ -9,7 +9,7 @@ public class AppMain {
         Student[] studentArray = {student, student2};
 
         StudentDB studentDB = new StudentDB(studentArray);
-        // studentDB.add("Felix", 5555);
+        studentDB.add("Felix", 5555);
 
         System.out.println(studentDB);
         System.out.println(studentDB.randomStudent());
