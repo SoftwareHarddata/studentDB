@@ -16,6 +16,7 @@ class StudentDBTest {
         Student[] students = {student1, student3};
         StudentDB studentDB = new StudentDB(students);
 
+
         // WHEN
         Student[] actual = studentDB.list();
 
@@ -24,6 +25,7 @@ class StudentDBTest {
                 new Student("Peter", 1),
                 new Student("Maria", 2)
         }, actual);
+
 
     }
 

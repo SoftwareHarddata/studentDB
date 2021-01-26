@@ -6,14 +6,14 @@ public class AppMain {
         Student student = new Student("Magnus", 54544);
         Student student2 = new Student("Yan", 12121);
 
-
-
         Student[] studentArray = {student, student2};
 
         StudentDB studentDB = new StudentDB(studentArray);
         // studentDB.add("Felix", 5555);
 
         System.out.println(studentDB);
+        System.out.println(studentDB.randomStudent());
+
     }
 
 
