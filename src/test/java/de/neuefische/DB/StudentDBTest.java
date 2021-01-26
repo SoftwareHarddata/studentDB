@@ -10,11 +10,20 @@ class StudentDBTest {
     @Test
     void listShouldReturnAllStudents(){
         // GIVEN
-        Student student1 = new Student("Peter" 1);
-        Student student3 = new Student("Maria" 2);
+        Student student1 = new Student("Peter", 1);
+        Student student3 = new Student("Maria", 2);
 
         Student[] students = {student1, student3};
-        StudentDB studentDB = new StudentDB(students)
+        StudentDB studentDB = new StudentDB(students);
+
+        // WHEN
+        Student[] actual = studentDB.list();
+
+        // THEN
+        assertArrayEquals(new Student[]{
+                new Student("Peter", 1),
+                new Student("Maria", 2)
+        }, actual);
 
     }
 
